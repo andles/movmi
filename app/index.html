@@ -33,11 +33,26 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
+  <script src="view1/routing_login.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script>
+  // Initialize the Firebase SDK
+  var config = {
+    apiKey: "AIzaSyBYAz0UWjnf52KElgjMdWZubj3-_ewCoHI",
+    authDomain: "movmi-app.firebaseapp.com",
+    databaseURL: "https://movmi-app.firebaseio.com",
+    projectId: "movmi-app",
+    storageBucket: "movmi-app.appspot.com",
+    messagingSenderId: "657963520526"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
